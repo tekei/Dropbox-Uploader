@@ -458,7 +458,7 @@ case "$COMMAND" in
                 DIR_CONTENT=$(echo "$DIR_CONTENT" | sed 's/},\s*{/\}\r\n\{/g')
                 
                 #Extracing files and subfolders
-                echo "$DIR_CONTENT" | sed -n -e 's/.*"path":\s*"\([^"]*\)",.*"is_dir":\s*\([^"]*\),.*/\1\t\2/p' > $RESPONSE_FILE
+                echo "$DIR_CONTENT" | sed -n -e 's/.*"path":\s*"\([^"]*\)",.*"is_dir":\s*\([^"]*\),.*/\1\t\2/p' | recode JAVA > $RESPONSE_FILE
                 
                 #For each line...
                 while read line; do
