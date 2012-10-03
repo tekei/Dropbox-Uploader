@@ -1,3 +1,10 @@
+listコマンドが日本語ファイル名が通らなかったので、書き換えました。
+recodeコマンドのインストールが必要です。
+
+sudo apt-get install recode
+
+======
+
 Author: Andrea Fabrizi
 Email:  andrea.fabrizi@gmail.com
 Web:    http://www.andreafabrizi.it
